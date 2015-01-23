@@ -1,0 +1,336 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Main"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#EBAE15" >
+
+        <ImageView
+            android:id="@+id/imageView1"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:src="@drawable/logo"
+            android:layout_margin="4dp" />
+
+        <TextView
+            android:id="@+id/sepHeaderTxt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="En 5 Estoy"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:textStyle="bold" />
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+        <LinearLayout
+            android:id="@+id/mainbarLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+
+            <Button
+                android:id="@+id/saldoBtn"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@drawable/graybutton"
+                android:text="Saldo Red-Bus"
+                android:textSize="12sp" />
+
+            <Button
+                android:id="@+id/taxiBtn"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@drawable/graybutton"
+                android:text="Calculá el precio de tu Taxi"
+                android:textSize="12sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/appLayout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/mainbarLayout"
+            android:orientation="vertical" >
+
+            <ScrollView
+                android:id="@+id/taxiLayout"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" >
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical" >
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" >
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="#CCCCCC"
+                            android:orientation="vertical"
+                            android:padding="8dp" >
+
+                            <TextView
+                                android:id="@+id/TextView02"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:gravity="center"
+                                android:text="@string/taxi_string"
+                                android:textSize="11sp" />
+                        </LinearLayout>
+
+                        <ImageView
+                            android:id="@+id/ImageView02"
+                            android:layout_width="match_parent"
+                            android:layout_height="4dp"
+                            android:layout_alignParentLeft="true"
+                            android:layout_alignParentTop="true"
+                            android:src="@drawable/shadow" />
+                    </RelativeLayout>
+
+                    <ImageView
+                        android:id="@+id/ImageView03"
+                        android:layout_width="match_parent"
+                        android:layout_height="4dp"
+                        android:src="@drawable/shadow" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:padding="15dp" >
+
+                        <EditText
+                            android:id="@+id/fromTxt"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:hint="Ingresá dónde tomarás tu Taxi"
+                            android:inputType="textPostalAddress" >
+
+                            <requestFocus />
+                        </EditText>
+
+                        <TextView
+                            android:id="@+id/textView4"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="ó dejalo vacío para usar tu ubicación actual" />
+
+                        <EditText
+                            android:id="@+id/toTxt"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="15dp"
+                            android:hint="Ingresá a donde querés ir"
+                            android:inputType="textPostalAddress" />
+
+                        <TextView
+                            android:id="@+id/TextView01"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="ó dejalo vacío para usar tu ubicación actual" />
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="10dp" >
+
+                            <Button
+                                android:id="@+id/calculateBtn"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:text="Calcular" />
+                        </LinearLayout>
+                    </LinearLayout>
+                </LinearLayout>
+            </ScrollView>
+
+            <ScrollView
+                android:id="@+id/busLayout"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:visibility="gone" >
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical" >
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" >
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="#CCCCCC"
+                            android:orientation="vertical"
+                            android:padding="8dp" >
+
+                            <TextView
+                                android:id="@+id/textView3"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:gravity="center"
+                                android:text="@string/aclaracion_txt"
+                                android:textSize="11sp" />
+
+                            <TextView
+                                android:id="@+id/registerBtn"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="4dp"
+                                android:gravity="center"
+                                android:text="@string/registro_tarjeta"
+                                android:textSize="11sp"
+                                android:textStyle="bold" />
+                        </LinearLayout>
+
+                        <ImageView
+                            android:id="@+id/ImageView01"
+                            android:layout_width="match_parent"
+                            android:layout_height="4dp"
+                            android:layout_alignParentLeft="true"
+                            android:layout_alignParentTop="true"
+                            android:src="@drawable/shadow" />
+
+                    </RelativeLayout>
+
+                    <ImageView
+                        android:id="@+id/imageView2"
+                        android:layout_width="match_parent"
+                        android:layout_height="4dp"
+                        android:src="@drawable/shadow" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:padding="15dp" >
+
+                        <EditText
+                            android:id="@+id/dniTxt"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:hint="D.N.I."
+                            android:inputType="number" />
+
+                        <EditText
+                            android:id="@+id/cardTxt"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:hint="Nro. Tarjeta"
+                            android:inputType="number" />
+
+                        <RelativeLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center" >
+
+                            <ProgressBar
+                                android:id="@+id/progressBar1"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_centerInParent="true"
+                                android:layout_margin="10dp" />
+
+                            <ImageView
+                                android:id="@+id/captchaView"
+                                android:layout_width="200dp"
+                                android:layout_height="90dp"
+                                android:layout_marginBottom="8dp"
+                                android:layout_marginTop="8dp"
+                                android:scaleType="fitXY"
+                                android:src="@drawable/transparent" />
+                        </RelativeLayout>
+
+                        <EditText
+                            android:id="@+id/controlTxt"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:ems="10"
+                            android:hint="Captcha" />
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content" >
+
+                            <Button
+                                android:id="@+id/sendBtn"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:text="Consultar" />
+
+                            <Button
+                                android:id="@+id/historialBtn"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:text="Historial" />
+                        </LinearLayout>
+
+                        <WebView
+                            android:id="@+id/webView1"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:visibility="gone" />
+                    </LinearLayout>
+
+                    <TextView
+                        android:id="@+id/separator"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="#CCCCCC"
+                        android:padding="10dp"
+                        android:text="Centros de Recarga Sugeridos" />
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" >
+
+                        <ImageView
+                            android:id="@+id/imageView2"
+                            android:layout_width="match_parent"
+                            android:layout_height="4dp"
+                            android:src="@drawable/shadow" />
+
+                        <LinearLayout
+                            android:id="@+id/suggestedContainer"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical" >
+                        </LinearLayout>
+                    </RelativeLayout>
+
+                    <Button
+                        android:id="@+id/moreBtn"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/whitebutton"
+                        android:text="Ver todo" />
+                </LinearLayout>
+            </ScrollView>
+
+        </LinearLayout>
+        
+        <ImageView android:id="@+id/imageView2" android:layout_width="match_parent" android:layout_height="4dp" android:src="@drawable/shadow" />
+
+    </RelativeLayout>
+
+</LinearLayout>

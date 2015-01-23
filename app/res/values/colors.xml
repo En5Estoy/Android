@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="stroke">#dddddd</color>
+    <color name="text_light">#66000000</color>
+    <color name="card_text">#ff8d8d8d</color>
+    <color name="card_title_text">#ff707070</color>
+    <color name="card_light_text">#ffb5b5b5</color>
+    <color name="card_grid_text">#ff707070</color>
+    <color name="card_separator">#ffe5e5e5</color>
+    <color name="card_border">#ffdedede</color>
+    <color name="option_back">#EEEEEE</color>
+    <!-- #2C3E50 -->
+    <color name="option_font">#2c3e50</color>
+    <!-- #ECF0F1 -->
+    
+    <color name="highlight">#e67e22</color>
+    <color name="button_color">#2c3e50</color>
+    
+    <color name="card_button_color">#7F8C8D</color>
+    
+    <color name="app_background">#ecf0f1</color>
+
+</resources>

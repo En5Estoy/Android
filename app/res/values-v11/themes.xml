@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?> 
+<resources>
+        
+        <style name="WithoutTitle" parent="android:Theme.Holo.Light">
+                <item name="android:windowTitleSize">0px</item>
+                <item name="android:windowTitleBackgroundStyle">@style/WindowNoTitle</item>
+                <item name="android:windowContentOverlay">@android:color/transparent</item>
+                <item name="android:windowActionBar">false</item>
+                <item name="showcaseViewStyle">@style/CustomShowcaseTheme</item>
+                
+        </style>
+</resources>

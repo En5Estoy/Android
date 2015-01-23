@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?> 
+<resources>
+        <style name="WithTitle" parent="android:Theme.Holo.Light">
+                <item name="android:windowTitleSize">45dp</item>
+                <item name="android:windowTitleBackgroundStyle">@style/WindowTitleBackground</item>
+                <item name="android:windowContentOverlay">@android:color/transparent</item>
+        </style>
+        
+        <style name="WithoutTitle" parent="android:Theme.Holo.Light">
+                <item name="android:windowTitleSize">0px</item>
+                <item name="android:windowTitleBackgroundStyle">@style/WindowNoTitle</item>
+                <item name="android:windowContentOverlay">@android:color/transparent</item>
+                <item name="android:windowActionBar">false</item>
+                <item name="showcaseViewStyle">@style/CustomShowcaseTheme</item>
+                <!-- Translucent Status and navigation -->
+                <!-- <item name="android:windowTranslucentStatus">true</item>
+        		<item name="android:windowTranslucentNavigation">false</item> -->
+        </style>
+</resources>

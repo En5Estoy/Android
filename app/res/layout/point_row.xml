@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/flat_background"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="12dp" >
+
+            <TextView
+                android:id="@+id/cardTitleTxt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:fontFamily="sans-serif"
+                android:text="Colectivo > AA"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textColor="@color/card_title_text" />
+
+            <TextView
+                android:id="@+id/providerIcon"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:paddingLeft="5dp"
+                android:paddingRight="5dp"
+                android:text="\ue002"
+                android:textAppearance="?android:attr/textAppearanceMedium" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/cardContainer"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/cardDetailsTxt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_weight="1"
+            android:paddingBottom="12dp"
+            android:paddingTop="12dp"
+            android:text="LALALALALALALA"
+            android:textColor="#7F8C8D" />
+
+        <ImageView
+            android:id="@+id/imageView1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:src="@drawable/dotted_line" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+
+            <Button
+                android:id="@+id/callButton"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@drawable/whitebutton_large"
+                android:paddingLeft="4dp"
+                android:paddingRight="4dp"
+                android:text="Llamar"
+                android:textColor="#7F8C8D"
+                android:textSize="13sp" />
+
+            <Button
+                android:id="@+id/editBtn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/whitebutton_large"
+                android:text="\u270F" 
+                android:textColor="#7F8C8D"
+                android:textSize="13sp"
+                android:paddingLeft="12dp"
+                android:paddingRight="12dp" />
+
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/imageView1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:src="@drawable/dotted_line" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal" >
+
+            <Button
+                android:id="@+id/navigationButton"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@drawable/whitebutton_left_rounded"
+                android:paddingLeft="4dp"
+                android:paddingRight="4dp"
+                android:text="Navegar en \nGoogle Maps"
+                android:textColor="#7F8C8D"
+                android:textSize="13sp" />
+
+            <LinearLayout
+                android:layout_width="1px"
+                android:layout_height="30dp"
+                android:layout_gravity="center"
+                android:background="#ECF0F1" >
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/favoriteBtn"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@drawable/whitebutton_right_rounded"
+                android:paddingLeft="4dp"
+                android:paddingRight="4dp"
+                android:text="Agregar a mis\nfavoritos"
+                android:textColor="#7F8C8D"
+                android:textSize="13sp" />
+        </LinearLayout>
+    </LinearLayout>
+
+</RelativeLayout>

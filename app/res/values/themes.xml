@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?> 
+<resources xmlns:android="http://schemas.android.com/apk/res/android">
+        <style name="WithTitle" parent="@style/Theme.HoloEverywhereLight">
+                <item name="android:windowTitleSize">45dp</item>
+                <item name="android:windowTitleBackgroundStyle">@style/WindowTitleBackground</item>
+                <item name="android:windowContentOverlay">@android:color/transparent</item>
+        </style>
+        
+        <style name="WithoutTitle" parent="@style/Theme.HoloEverywhereLight">
+                <item name="android:windowTitleSize">0px</item>
+                <item name="android:windowTitleBackgroundStyle">@style/WindowNoTitle</item>
+                <item name="android:windowContentOverlay">@android:color/transparent</item>
+                <item name="showcaseViewStyle">@style/CustomShowcaseTheme</item>
+        </style>
+        
+        <style name="WithoutTitleDark" parent="@style/Theme.HoloEverywhereDark">
+                <item name="android:windowTitleSize">0px</item>
+                <item name="android:windowTitleBackgroundStyle">@style/WindowNoTitle</item>
+                <item name="android:windowContentOverlay">@android:color/transparent</item>
+        </style>
+</resources>

@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/flat_background"
+        android:orientation="horizontal" >
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:padding="12dp" >
+
+            <TextView
+                android:id="@+id/cardTitleTxt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:fontFamily="sans-serif"
+                android:text="Colectivo > AA"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textColor="@color/card_title_text"
+                android:textSize="16sp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="1px"
+            android:layout_height="match_parent"
+            android:background="#ECF0F1" >
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/buttonsLayout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <Button
+                android:id="@+id/navigationButton"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@drawable/whitebutton_top_right_rounded"
+                android:paddingLeft="4dp"
+                android:paddingRight="4dp"
+                android:text="\uf203"
+                android:textColor="#7F8C8D"
+                android:textSize="22sp" />
+
+            <Button
+                android:id="@+id/favoriteBtn"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@drawable/whitebutton_right_rounded"
+                android:paddingLeft="4dp"
+                android:paddingRight="4dp"
+                android:text="\uf159"
+                android:textColor="#7F8C8D"
+                android:textSize="22sp" />
+        </LinearLayout>
+    </LinearLayout>
+
+</RelativeLayout>

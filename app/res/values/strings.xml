@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">En 5 Estoy</string>
+    <string name="application_name">En 5 Estoy</string>
+    
+    <string name="aclaracion_txt">Accedemos al sitio web de Red Bus para obtener los datos por lo cual es probable que debido a caídas del mismo no se muestren siempre. El código de verificación de tal sitio es obligatorio, el servicio que ofrecemos no pretende pasar por sobre las características de seguridad impuestas por Red Bus. La aplicación guardará los últimos datos ingresados y podrá consultar un histórico de sus consultas de manera offline.</string>
+    <string name="registro_tarjeta">Antes de usar esta aplicación debe registrar su tarjeta. Si desea hacerlo toque aquí y lo guiaremos.</string>
+    <string name="history_txt">Aqui se mostrarán sus 5 últimas consultas. Es probable que Red Bus demore hasta 2 días en actualizar el saldo.\nEl detalle de la consulta sólo se mostrará para consultas online y no aquellas que sean guardadas en el historial.</string>
+    <string name="register_aclaracion">Antes de comenzar lea atentamente: Para lograr un registro exitoso deberás ingresar los datos de un viaje realizado al menos 24 hs hábiles atrás. Es decir, si viajaste hoy recién podrás cargar la información para el registro mañana. Si el número de la tarjeta no se ve correctamente podrás obtenerlo desde tu ticket de recarga o bien dirigiendote al centro de atención al cliente.</string>
+    <string name="error_popup">No hemos conseguido obtener su saldo, esto puede suceder por las siguientes causas: no ha ingresado correctamente los datos, su tarjeta no esta registrada o si recién registra su tarjeta es probable que su información tarde algunos días en aparecer. Ante cualquier consulta puede contactarse con nuestro soporte técnico a info@en5estoy.com.</string>
+    <string name="taxi_string">Aquí podrás calcular el precio y tiempo estimado que tendrá tu viaje en Taxi o Remís. Tené en cuenta que los datos provistos son a modo de referencia y pueden variar de acuerdo a factores como el tránsito.\nTambién te ofrecemos una referencia del camino más rápido para llegar a tu destino.</string>
+    <string name="taxi_details_txt">Dejá vacio el campo que desees que sea obtenido desde el GPS de tu dispositivo.</string>
+    <string name="points_details_txt">Buscá comercios o lugares indicando una categoria. Si querés filtrar la búsqueda ingresá un término en el campo de búsqueda o dejalo vacío para obtener todos los resultados.</string>
+    <string name="lines_txt">Acá podrá ver las lineas de Colectivo de la ciudad. Seleccione una linea para conocer sus paradas.</string>
+    <string name="lines_btn">Seleccionar línea</string>
+    <string name="colectivos">Transporte\nPúblico</string>
+    <string name="taxis">Taxis y Remises</string>
+    <string name="points">Comercios y Lugares</string>
+    <string name="news">Notificaciones</string>
+    <string name="account">Red Bus</string>
+    <string name="alarm">Alarma de\nPosición</string>
+    <string name="news_string">Aquí encontrarás las ultimas noticias relacionadas a la aplicación y la ciudad.</string>
+    <string name="change_number_string">Ingrese el nuevo número para modificarlo:\n\nNota importante: Todas las modificaciones son verificadas y de ser necesario se denegará a su dispositivo el acceso al servicio de conocerse una modificación para perjudicar a un tercero.</string>
+    <string name="blocked_popup">Su dispositivo ha sido bloqueado preventivamente debido a que se verificó que desde su dispositivo se hizo una modificación perjudicial a un tercero. Si cree que esto sucedió por error presione en contacto y su dispositivo será habilitado a la brevedad.</string>
+    <string name="different_city">Hemos detectado que cambió de ciudad. Desea cambiar la ciudad actual?</string>
+    <string name="change_city">Esta acción borrará todos sus datos de la ciudad actual. Desea cambiar la ciudad actual?</string>
+    <string name="commerce_no_result">No hemos encontrado resultados. Intente nuevamente refinando su búsqueda.</string>
+    
+    <string name="connection_error">Se produjo un error con la conexión. Por favor intente de nuevo más tarde</string>
+    
+    <string name="uncomplete_fields">Debe completar al menos un campo para poder realizar el cálculo.</string>
+    
+    <string name="alarm_set">Alarma programada. Se le notificará cuando este cerca del destino.</string>
+
+    <string name="your_location">Tu ubicación actual</string>
+    <string name="select_a_line">Debe seleccionar una línea.</string>
+    
+    <string name="share_app">Descargá En 5\' Estoy desde Google Play y conoce todos los detalles del transporte de tu ciudad!</string>
+    
+    <string name="geolocation_precision">El proveedor de ubicación: %s no se encuentra activo. Úselo para mejorar su ubicación.</string>
+    
+    <string name="interest_favorite">Usted puede eliminar los favoritos tocando el botón de Eliminar favorito en la tarjeta.</string>
+    <string name="interest_points">Los resultados aparecerán ordenados de acuerdo a tu ubicación actual.</string>
+    <string name="interest_nonumber">Sin número</string>
+    
+    <string name="slide">Deslice hacia la derecha</string>
+    
+    <string name="transport_no_match">No hemos encontrado resultados. Verifique que ha escrito correctamente el nombre de las calles e intente nuevamente.</string>
+    
+    <string name="alarm_created">Se ha creado una nueva alarma de posición. Se le notificará a 400 metros del destino.</string>
+    
+    <string name="taxi_no_match">No hemos podido generar una ruta, por favor revisa las calles ingresadas.</string>
+    
+    <string name="news_error">Se produjo un error al abrir la noticia. Intente nuevamente más tarde.</string>
+    
+    <string name="interests_open">La información de %s será abierta en una aplicación externa. Desea continuar?</string>
+    <string name="interests_error">Se produjo un error al abrir la información. Intente nuevamente más tarde.</string>
+    
+    <string name="change_city_no_ask">No\npreguntar</string>
+    
+    <string name="no_db">Fallo en la carga de centros, es probable que su dispositivo no posea suficiente espacio.</string>
+</resources>

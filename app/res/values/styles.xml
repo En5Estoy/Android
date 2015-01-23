@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <style name="Theme.Transparent" parent="android:Theme">
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:backgroundDimEnabled">false</item>
+    </style>
+    
+    <style name="CustomShowcaseTheme" parent="ShowcaseView.Light">
+        <item name="sv_backgroundColor">#E1FFFFFF</item>
+        <item name="sv_showcaseColor">@color/highlight</item>
+        <item name="sv_buttonText">OK</item>
+        <item name="sv_detailTextAppearance">@style/HelpText</item>
+        <item name="sv_titleTextAppearance">@style/HelpTitleText</item>
+    </style>
+
+    <style name="AppTheme" parent="@style/Theme.HoloEverywhereLight">
+        
+    </style>
+
+    <style name="HoloDialog" parent="@style/AlertDialogHoloLight">
+        <item name="android:textColor">?android:attr/textColorPrimaryInverseDisableOnly</item>
+    </style>
+    
+    <style name="HelpTitleText">
+        <item name="android:singleLine">true</item>
+        <item name="android:textAppearance">@android:style/TextAppearance.WindowTitle</item>
+        <item name="android:shadowColor">#BB000000</item>
+        <item name="android:shadowRadius">2.75</item>
+        <item name="android:textColor">@color/button_color</item>
+        <item name="android:textSize">24sp</item>
+    </style>
+    
+    <style name="HelpText">
+        <item name="android:singleLine">true</item>
+        <item name="android:textAppearance">@android:style/TextAppearance.WindowTitle</item>
+        <item name="android:shadowColor">#BB000000</item>
+        <item name="android:shadowRadius">2.75</item>
+        <item name="android:textColor">@color/card_text</item>
+        <item name="android:textSize">20sp</item>
+    </style>
+    
+    <style name="WindowTitle">
+        <item name="android:singleLine">true</item>
+        <item name="android:textAppearance">@android:style/TextAppearance.WindowTitle</item>
+        <item name="android:shadowColor">#BB000000</item>
+        <item name="android:shadowRadius">2.75</item>
+    </style>
+
+    <style name="WindowTitleBackground">
+        <item name="android:background">@android:color/transparent</item>
+    </style>
+
+    <style name="WindowNoTitle">
+        <item name="android:windowNoTitle">true</item>
+    </style>
+    
+    <!-- @android:style/Theme.Dialog -->
+    <style name="ProgressHUD" parent="@style/HoloDialog">
+        <item name="android:windowFrame">@null</item>
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:windowAnimationStyle">@android:style/Animation.Dialog</item>
+        <item name="android:windowSoftInputMode">stateUnspecified|adjustPan</item>
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowNoTitle">true</item>
+    </style>
+
+</resources>

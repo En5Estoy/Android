@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.speryans.redbus"
+    android:versionCode="310"
+    android:versionName="3.0.3" >
+
+    <uses-sdk
+        android:minSdkVersion="8"
+        android:targetSdkVersion="19" />
+
+    <permission
+        android:name="com.speryans.redbus.permission.MAPS_RECEIVE"
+        android:protectionLevel="signature" />
+
+    <uses-permission android:name="com.speryans.redbus.permission.MAPS_RECEIVE" />
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="com.google.android.providers.gsf.permission.READ_GSERVICES" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+
+    <permission
+        android:name="com.speryans.redbus.permission.C2D_MESSAGE"
+        android:protectionLevel="signature" />
+
+    <uses-permission android:name="com.speryans.redbus.permission.C2D_MESSAGE" />
+
+    <uses-feature
+        android:name="android.hardware.telephony"
+        android:required="false" />
+
+    <!-- App receives GCM messages. -->
+    <uses-permission android:name="com.google.android.c2dm.permission.RECEIVE" />
+    <!-- GCM requires a Google account. -->
+    <uses-permission android:name="android.permission.GET_ACCOUNTS" />
+    <!-- Keeps the processor from sleeping when a message is received. -->
+
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+
+    <uses-feature
+        android:glEsVersion="0x00020000"
+        android:required="true" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/application_name"
+        android:theme="@style/WithoutTitle" >
+        <!--
+             <meta-data
+            android:name="com.google.android.maps.v2.API_KEY"
+            android:value="AIzaSyC79lAJViuoznapEm4M1nnW-U9p_-HllyU" />
+        
+-->
+	
+        <!-- <meta-data
+            android:name="com.google.android.maps.v2.API_KEY"
+            android:value="AIzaSyBwC4tMCdO5e4gzXH1Rsh5uTs3MtKV3M54" /> -->
+
+
+        <activity
+            android:name="Home"
+            android:configChanges="keyboard|keyboardHidden|orientation|screenSize"
+            android:label="@string/application_name"
+            android:windowSoftInputMode="stateAlwaysHidden" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" ></action>
+                <category android:name="android.intent.category.DEFAULT"></category>
+                <category android:name="android.intent.category.BROWSABLE" ></category>
+
+                <data android:host="en5estoy.com" android:scheme="http"></data>
+                <data android:host="www.en5estoy.com" android:scheme="http"></data>
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="Wizard"
+            android:configChanges="keyboard|keyboardHidden" >
+        </activity>
+        <activity
+            android:name="History"
+            android:configChanges="keyboard|keyboardHidden|orientation|screenSize" >
+        </activity>
+        <activity
+            android:name="CentersPoints"
+            android:configChanges="keyboard|keyboardHidden|orientation|screenSize"
+            android:windowSoftInputMode="stateHidden" >
+        </activity>
+        <activity
+            android:name="MapDetails"
+            android:configChanges="keyboard|keyboardHidden|orientation|screenSize" >
+        </activity>
+        <activity
+            android:name="TaxiDetails"
+            android:configChanges="keyboard|keyboardHidden|orientation|screenSize" >
+        </activity>
+        <activity
+            android:name="RegisterCard"
+            android:configChanges="keyboard|keyboardHidden|orientation|screenSize" >
+        </activity>
+        <activity
+            android:name="Buses"
+            android:configChanges="keyboard|keyboardHidden|orientation|screenSize" >
+        </activity>
+        <activity
+            android:name="Alarm"
+            android:configChanges="keyboard|keyboardHidden|orientation|screenSize" >
+        </activity>
+        <activity
+            android:name="Interests"
+            android:configChanges="keyboard|keyboardHidden|orientation|screenSize" >
+        </activity>
+        <activity
+            android:name="Lines"
+            android:configChanges="keyboard|keyboardHidden|orientation|screenSize" >
+        </activity>
+
+        <service android:name=".services.AlarmTracker" >
+        </service>
+        <service android:name="org.OpenUDID.OpenUDID_service" >
+            <intent-filter>
+                <action android:name="org.openudid.GETUDID" />
+            </intent-filter>
+        </service>
+
+        <receiver
+            android:name="com.google.android.gcm.GCMBroadcastReceiver"
+            android:permission="com.google.android.c2dm.permission.SEND" >
+            <intent-filter>
+                <action android:name="com.google.android.c2dm.intent.RECEIVE" />
+                <action android:name="com.google.android.c2dm.intent.REGISTRATION" />
+
+                <category android:name="com.speryans.redbus" />
+            </intent-filter>
+        </receiver>
+
+        <service android:name="com.speryans.redbus.GCMIntentService" />
+        <meta-data android:name="com.crashlytics.ApiKey" android:value="3624388c37dd69f05c1b6203787868269e4f1654"/>
+    </application>
+
+</manifest>

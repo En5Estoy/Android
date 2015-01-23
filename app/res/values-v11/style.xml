@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<resources>
+    <style name="AppTheme" parent="android:style/Theme.Holo.Light">
+    </style>
+    
+	<style name="WindowTitle">
+           <item name="android:singleLine">true</item>
+           <item name="android:textAppearance">@android:style/TextAppearance.WindowTitle</item>
+           <item name="android:shadowColor">#BB000000</item>
+           <item name="android:shadowRadius">2.75</item>
+    </style>
+
+    <style name="WindowTitleBackground">
+        <item name="android:background">@android:color/transparent</item>
+    </style>
+    
+    <style name="WindowNoTitle">
+        <item name="android:windowNoTitle">true</item>
+    </style>
+</resources>

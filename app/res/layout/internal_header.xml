@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#EEFFFFFF" 
+        android:paddingLeft="12dp"
+        android:paddingRight="12dp" >
+
+        <TextView
+            android:id="@+id/iconHeader"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="5dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="\uf124"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:textColor="@color/button_color"
+            android:textSize="30sp"
+            android:textStyle="bold" />
+
+        <ImageView
+            android:id="@+id/imageView1"
+            android:layout_width="45dp"
+            android:layout_height="45dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="5dp"
+            android:src="@drawable/new_logo"
+            android:layout_centerInParent="true" />
+        
+        <TextView
+            android:id="@+id/shareBtn"
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="5dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="\uf220"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:textColor="@color/button_color"
+            android:textSize="30sp"
+            android:textStyle="bold"
+            android:visibility="gone" />
+        
+    </RelativeLayout>

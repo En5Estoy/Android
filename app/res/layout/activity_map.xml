@@ -1,0 +1,147 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Main"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#EBAE15" >
+
+        <ImageView
+            android:id="@+id/imageView1"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:src="@drawable/logo"
+            android:layout_margin="4dp" />
+
+        <TextView
+            android:id="@+id/sepHeaderTxt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="Saldo Red-Bus"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:textStyle="bold" />
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical" >
+
+            <ScrollView
+                android:id="@+id/scroller"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" >
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical" >
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" >
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="320dp" >
+                            
+                            <org.osmdroid.views.MapView
+                    			android:id="@+id/mapview"
+                    			android:layout_width="fill_parent"
+                    			android:layout_height="fill_parent"
+                    			android:clickable="true" />
+                            
+                        </LinearLayout>
+
+                        <ImageView
+                            android:id="@+id/ImageView01"
+                            android:layout_width="match_parent"
+                            android:layout_height="4dp"
+                            android:layout_alignParentBottom="true"
+                            android:layout_alignParentLeft="true"
+                            android:layout_alignParentRight="false"
+                            android:layout_alignParentTop="false"
+                            android:src="@drawable/invertedshadow" />
+                    </RelativeLayout>
+
+                    <TextView
+                        android:id="@+id/titleTxt"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="#CCCCCC"
+                        android:padding="10dp"
+                        android:text="Centros de Recarga" />
+
+                    <TextView
+                        android:id="@+id/detailsTxt"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text=""
+                        android:padding="10dp" />
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" >
+
+                        <ImageView
+                            android:id="@+id/imageView2"
+                            android:layout_width="match_parent"
+                            android:layout_height="4dp"
+                            android:src="@drawable/shadow" />
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical" >
+
+                            <TextView
+                                android:id="@+id/TextView01"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:background="#CCCCCC"
+                                android:padding="10dp"
+                                android:text="Cómo llegar?" />
+
+                            <RelativeLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content" >
+
+                                <LinearLayout
+                                    android:id="@+id/stepsContainer"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:orientation="vertical" >
+                                </LinearLayout>
+
+                                <ImageView
+                                    android:id="@+id/ImageView02"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="4dp"
+                                    android:layout_alignParentLeft="true"
+                                    android:layout_alignParentTop="true"
+                                    android:src="@drawable/shadow" />
+
+                            </RelativeLayout>
+
+                        </LinearLayout>
+                    </RelativeLayout>
+                </LinearLayout>
+            </ScrollView>
+
+        </LinearLayout>
+        
+        <ImageView android:id="@+id/imageView2" android:layout_width="match_parent" android:layout_height="4dp" android:src="@drawable/shadow" />
+
+    </RelativeLayout>
+
+</LinearLayout>
